@@ -1,0 +1,88 @@
+.c1{
+  background: url('https: //m .media amazon .com/images/G/01/kfw/landing/img_sky_bg2x._CB630820936_.png');
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  position: relative;
+  justify-content: space-between;
+}
+
+.c11{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+  gap: 20px;
+}
+
+.logo{
+  height: 50px;
+  object-fit: contain;
+}
+
+.t1{
+  color: white;
+}
+
+.btnRow{
+  display: flex;
+  gap:5px;
+}
+
+.btn1{
+  background-color: white;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.btn2{
+  background-color: #ffe19c;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap:10px;
+  cursor: pointer;
+}
+
+.bottoming{
+  z-index: 1;
+  height:60vh;
+  object-fit: contain;  
+}
+
+
+@keyframes blob {
+  0% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  33% {
+    transform: translate(30px, -50px) scale(1.1);
+  }
+  66% {
+    transform: translate(-20px, 20px) scale(0.9);
+  }
+  100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+}
+
+.animate-blob {
+  animation: blob 7s infinite;
+}
+
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+

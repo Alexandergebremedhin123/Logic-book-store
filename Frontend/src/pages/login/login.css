@@ -1,0 +1,101 @@
+/* Form Container */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+  width: 400px;           
+  margin-top: 50px;
+  margin-left: 470px;  
+  background: #f9f9f9;       
+  padding: 2rem;
+  border-radius: 12px;
+  font-family: sans-serif; 
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  background: #ffffff;  
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* Form Heading */
+.form-heading {
+  font-size: 1.5rem; /* text-2xl */
+  font-weight: 700; /* font-bold */
+  color: #1f2937; /* text-gray-800 */
+  margin-bottom: 1.5rem; /* mb-6 */
+}
+
+/* Form Labels */
+.form-label {
+  display: block; /* block */
+  font-size: 0.875rem; /* text-sm */
+  font-weight: 500; /* font-medium */
+  color: #374151; /* text-gray-700 */
+  margin-bottom: 0.25rem; /* mb-1 */
+}
+
+/* Form Inputs */
+.form-input {
+  width: 100%; /* w-full */
+  padding: 0.5rem 1rem; /* px-4 py-2 */
+  border: 1px solid #d1d5db; /* border-gray-300 */
+  border-radius: 0.5rem; /* rounded-lg */
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #6366f1; /* focus:border-indigo-500 */
+  box-shadow: 0 0 0 2px #e0e7ff; /* focus:ring-2 focus:ring-indigo-500 */
+}
+
+/* Checkbox Container */
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Checkbox */
+.form-checkbox {
+  height: 1rem; /* h-4 */
+  width: 1rem; /* w-4 */
+  color: #6366f1; /* text-indigo-600 */
+  border-color: #d1d5db; /* border-gray-300 */
+  border-radius: 0.25rem; /* rounded */
+}
+
+.form-checkbox:focus {
+  box-shadow: 0 0 0 2px #e0e7ff; /* focus:ring-indigo-500 */
+}
+
+/* Checkbox Label */
+.checkbox-label {
+  margin-left: 0.5rem; /* ml-2 */
+  font-size: 0.875rem; /* text-sm */
+  color: #374151; /* text-gray-700 */
+}
+
+/* Link */
+.form-link {
+  font-size: 0.875rem; /* text-sm */
+  color: #6366f1; /* text-indigo-600 */
+}
+
+.form-link:hover {
+  color: #4f46e5; /* hover:text-indigo-500 */
+}
+
+/* Submit Button */
+.submit-button {
+  width: 100%; /* w-full */
+  background-color: #6366f1; /* bg-indigo-600 */
+  color: white;
+  padding: 0.5rem 1rem; /* py-2 px-4 */
+  border-radius: 0.5rem; /* rounded-lg */
+  font-weight: 500; /* font-medium */
+  transition: background-color 0.2s ease; /* transition-colors */
+}
+
+.submit-button:hover {
+  background-color: #4f46e5; /* hover:bg-indigo-700 */
+}
