@@ -11,12 +11,24 @@ dotenv.config();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(express.json());
+const allowedOrigins = [
+  'http://localhost:3000',             
+  'https://myfrontend.onrender.com'   
+];
+
 app.use(cors({
-  origin: 'https://myfrontend.onrender.com','http://localhost:3000',
+  origin: function (origin, callback) {
+    if (allowedOrigins.includes(origin)) {
+      callback(null, true); 
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  },
   credentials: true,
   methods: ['GET','POST','PUT','DELETE'],
   allowedHeaders: ['Content-Type','Authorization']
 }));
+
 const MyBooks = require('./books/books');
 app.get('/api/Logicbooks', (req, res) => {
     res.json(MyBooks);
