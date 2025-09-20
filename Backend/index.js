@@ -11,16 +11,11 @@ dotenv.config();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(express.json());
-
-const corsOptions={
-    origin:'*',
-    methods:['GET','POST','PUT','DELETE'],
-    allowedHeaders:['Content-Type','Authorization']
-};
-app.use(cors(corsOptions));
 app.use(cors({
-  origin: 'http://localhost:3000', 
-  credentials: true 
+  origin: 'https://myfrontend.onrender.com','http://localhost:3000',
+  credentials: true,
+  methods: ['GET','POST','PUT','DELETE'],
+  allowedHeaders: ['Content-Type','Authorization']
 }));
 const MyBooks = require('./books/books');
 app.get('/api/Logicbooks', (req, res) => {
