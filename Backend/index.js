@@ -13,7 +13,7 @@ app.use(bodyParser.urlencoded({extended:true}));
 app.use(express.json());
 const allowedOrigins = [
   'http://localhost:3000',             
-  'https://myfrontend.onrender.com'   
+  'https://logic-book-store.vercel.app'   
 ];
 
 app.use(cors({
